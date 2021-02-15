@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "node-sass --watch scss/ -o css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kylest0kes/chat/issues"
   },
-  "homepage": "https://github.com/kylest0kes/chat#readme"
+  "homepage": "https://github.com/kylest0kes/chat#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
 }
