@@ -1,3 +1,4 @@
+// SIGN UP FORM VALIDATION
 const form = document.getElementById('form');
 const usernameEl = document.getElementById('username');
 const emailEl = document.getElementById('email');
@@ -117,7 +118,7 @@ const confirmPasswordMatch = () => {
     if (!isRequired(confirmPassword)) {
         displayError(confirmPasswordEl, 'Please enter the password again');
     } else if (password !== confirmPassword) {
-        displayError(confirmPasswordEl, 'Confirm password does not match');
+        displayError(confirmPasswordEl, 'Passwords does not match');
     } else {
         displaySuccess(confirmPasswordEl);
         valid = true;
