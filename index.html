@@ -11,24 +11,28 @@
     <title>Chat</title>
 </head>
 <body>
-    <form class="form">
+    <form class="form" id="form">
         <div class="form__group">
-            <input type="text" placeholder="Username" class="form__input" />
+            <input type="text" placeholder="Username" class="form__input" name="username" id="username" />
+            <small></small>
         </div>
     
         <div class="form__group">
-            <input type="email" placeholder="Email" class="form__input" />
+            <input type="email" placeholder="Email" class="form__input" name="email" id="email" />
+            <small></small>
         </div>
 
         <div class="form__group">
-            <input type="password" placeholder="Password" class="form__input" />
+            <input type="password" placeholder="Password" class="form__input" name="password" id="password"/>
+            <small></small>
         </div>
 
         <div class="form__group">
-            <input type="password" placeholder="Re-enter Password" class="form__input" />
+            <input type="password" placeholder="Re-enter Password" class="form__input" name="confirm-password" id="confirm-password"/>
+            <small></small>
         </div>
 
-        <button class="btn" type="button">sign up</button>
+        <button class="btn" type="submit">sign up</button>
         <a href="./pages/login.html" class="to-login">already have an account?</a>
     </form>
 

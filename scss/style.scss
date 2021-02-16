@@ -13,9 +13,7 @@ body {
     font-family: $font-family;
     font-size: $font-size;
     background-size: 200% 100% !important;
-    // animation: move 10s ease infinite;
-    // transform: translate3d(0, 0, 0);
-    background: linear-gradient(to bottom right, #4fc9e7 10%, #dfdfdf );
+    background: linear-gradient(to bottom right, #4fb7e7 10%, #dfdfdf);
     height: 100vh
 }
 
@@ -31,12 +29,6 @@ body {
     border-radius: 6px;
     overflow: hidden;
     width: 50%;
-}
-
-.form--no {
-    animation: NO 1s ease-in-out;
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
 }
 
 .form__input {
@@ -68,6 +60,7 @@ body {
     
     &:hover {
         background: darken($color-primary, 5%);
+        cursor: grab;
     }
 }
 
@@ -77,22 +70,10 @@ body {
     margin-top: 10px;
 }
 
-@keyframes NO {
-  from, to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
+.error {
+    border: red 3px solid;
 }
+
 
 
 

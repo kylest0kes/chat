@@ -7,7 +7,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   background-size: 200% 100% !important;
-  background: linear-gradient(to bottom right, #4fc9e7 10%, #dfdfdf);
+  background: linear-gradient(to bottom right, #4fb7e7 10%, #dfdfdf);
   height: 100vh; }
 
 .form {
@@ -22,11 +22,6 @@ body {
   border-radius: 6px;
   overflow: hidden;
   width: 50%; }
-
-.form--no {
-  animation: NO 1s ease-in-out;
-  opacity: 1;
-  transform: translate3d(0, 0, 0); }
 
 .form__input {
   display: block;
@@ -52,20 +47,13 @@ body {
   background: #ABA194;
   transition: 0.3s; }
   .btn:hover {
-    background: #a09486; }
+    background: #a09486;
+    cursor: grab; }
 
 .to-login {
   color: white;
   float: right;
   margin-top: 10px; }
 
-@keyframes NO {
-  from, to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0); }
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0); } }
+.error {
+  border: red 3px solid; }
