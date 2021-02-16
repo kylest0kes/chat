@@ -54,6 +54,11 @@ body {
   .btn:hover {
     background: #a09486; }
 
+.to-login {
+  color: white;
+  float: right;
+  margin-top: 10px; }
+
 @keyframes NO {
   from, to {
     -webkit-transform: translate3d(0, 0, 0);
