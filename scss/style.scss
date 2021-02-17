@@ -28,7 +28,9 @@ body {
     transform: translateX(-50%) translateY(-50%);
     border-radius: 6px;
     overflow: hidden;
-    width: 50%;
+    width: 40%;
+    box-shadow: 5px 5px 5px gray;
+    background-color: white;
 }
 
 .form__input {
@@ -64,10 +66,14 @@ body {
     }
 }
 
+.su-li-link {
+    width: 100%;
+}
+
 .to-login {
-    color: white;
-    float: right;
-    margin-top: 10px;
+    float: right; 
+    padding: 10px;
+    color: black;
 }
 
 .error {
