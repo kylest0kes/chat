@@ -17,6 +17,7 @@ body {
     height: 100vh
 }
 
+// SIGN UP AND LOG IN FORM STYLE
 .form {
     display: block;
     margin: 0 auto;
@@ -78,6 +79,92 @@ body {
 
 .error {
     border: red 3px solid;
+}
+
+// NAV STYLE
+$topbar-responsive-bg: rgb(75, 75, 75);
+$topbar-responsive-animation-type: none; // or use slide-down or none
+
+.topbar-responsive {
+  background: $topbar-responsive-bg;
+  padding: 1rem 1.5rem;
+  height: 50px;
+
+  .topbar-responsive-logo {
+    color: black;
+    vertical-align: middle;
+    font-size: 20px;
+  }
+
+  .menu {
+    background: $topbar-responsive-bg;
+
+    li:last-of-type {
+      margin-right: 0;
+    }
+
+    a {
+      color: black;
+      transition: color 0.15s ease-in;
+
+      &:hover {
+        color: lighten($topbar-responsive-bg, 60%);
+        
+      }
+
+      @media screen and (max-width: 39.9375em) {
+        padding: 0.875rem 0;
+      }
+    }
+
+    .topbar-responsive-button {
+      color: black;
+      border-color: white;
+      border-radius: 5000px;
+      transition: color 0.15s ease-in, border-color 0.15s ease-in;
+
+      &:hover {
+        color: lighten($topbar-responsive-bg, 60%);
+        background-color: red;
+        border-color: lighten($topbar-responsive-bg, 60%);
+      }
+
+      @media screen and (max-width: 39.9375em) {
+        width: 100%;
+        margin: 0.875rem 0;
+      }
+    }
+  }
+
+   @media screen and (max-width: 39.9375em) {
+     padding: 0.75rem;
+
+    .top-bar-title {
+      position: relative;
+      width: 100%;
+
+      span {
+        position: absolute;
+        right: 0;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 0.25rem 0.45rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .menu-icon {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
+
+// LANDING STYLE
+.landing-container {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
 }
 
 
