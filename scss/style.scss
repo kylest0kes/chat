@@ -167,6 +167,29 @@ $topbar-responsive-animation-type: none; // or use slide-down or none
     background-color: grey;
 }
 
+.landing-greeting {
+    text-align: center;
+    padding: 20px;
+}
+
+.landing-userbtns {
+    display: flex;
+    justify-content: center;
+}
+
+.user-button {
+    width: 330px;
+    background-color: rgb(61, 61, 61);
+    margin: 5px 10px;
+
+    &:hover {
+        background-color: rgb(39, 39, 39);
+    }
+}
+
+.add {
+    margin-left: 5px;
+}
 
 
 
