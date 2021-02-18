@@ -2,9 +2,11 @@
   "name": "chat",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "scss": "node-sass --watch scss/ -o css"
+    "scss": "node-sass --watch scss/ -o css",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -16,11 +18,19 @@
   "bugs": {
     "url": "https://github.com/kylest0kes/chat/issues"
   },
-  "homepage": "https://github.com/kylest0kes/chat#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "moment": "^2.29.1",
+    "mongoose": "^5.11.17",
     "node-sass": "^5.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
     "socket.io": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
